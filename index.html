@@ -2,761 +2,389 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CDN BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- Vicular iconos -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <!-- Iconos de boootsrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- Vincular hoja de estilos -->
-    <link rel="stylesheet" href="style.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/code-square.svg" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
-    <title>Pinterest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <title>Pérez Méndez Nancy Esmeralda</title>
 </head>
 
 <body>
+  <!-- cabecera -->
 
-    <!-- Encabezado del sitio -->
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <!-- icono -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="" fill="currentColor" class="bi bi-flower1"
+        viewBox="0 0 16 16">
+        <path
+          d="M6.174 1.184a2 2 0 0 1 3.652 0A2 2 0 0 1 12.99 3.01a2 2 0 0 1 1.826 3.164 2 2 0 0 1 0 3.652 2 2 0 0 1-1.826 3.164 2 2 0 0 1-3.164 1.826 2 2 0 0 1-3.652 0A2 2 0 0 1 3.01 12.99a2 2 0 0 1-1.826-3.164 2 2 0 0 1 0-3.652A2 2 0 0 1 3.01 3.01a2 2 0 0 1 3.164-1.826M8 1a1 1 0 0 0-.998 1.03l.01.091q.017.116.054.296c.049.241.122.542.213.887.182.688.428 1.513.676 2.314L8 5.762l.045-.144c.248-.8.494-1.626.676-2.314.091-.345.164-.646.213-.887a5 5 0 0 0 .064-.386L9 2a1 1 0 0 0-1-1M2 9l.03-.002.091-.01a5 5 0 0 0 .296-.054c.241-.049.542-.122.887-.213a61 61 0 0 0 2.314-.676L5.762 8l-.144-.045a61 61 0 0 0-2.314-.676 17 17 0 0 0-.887-.213 5 5 0 0 0-.386-.064L2 7a1 1 0 1 0 0 2m7 5-.002-.03a5 5 0 0 0-.064-.386 16 16 0 0 0-.213-.888 61 61 0 0 0-.676-2.314L8 10.238l-.045.144c-.248.8-.494 1.626-.676 2.314-.091.345-.164.646-.213.887a5 5 0 0 0-.064.386L7 14a1 1 0 1 0 2 0m-5.696-2.134.025-.017a5 5 0 0 0 .303-.248c.184-.164.408-.377.661-.629A61 61 0 0 0 5.96 9.23l.103-.111-.147.033a61 61 0 0 0-2.343.572c-.344.093-.64.18-.874.258a5 5 0 0 0-.367.138l-.027.014a1 1 0 1 0 1 1.732zM4.5 14.062a1 1 0 0 0 1.366-.366l.014-.027q.014-.03.036-.084a5 5 0 0 0 .102-.283c.078-.233.165-.53.258-.874a61 61 0 0 0 .572-2.343l.033-.147-.11.102a61 61 0 0 0-1.743 1.667 17 17 0 0 0-.629.66 5 5 0 0 0-.248.304l-.017.025a1 1 0 0 0 .366 1.366m9.196-8.196a1 1 0 0 0-1-1.732l-.025.017a5 5 0 0 0-.303.248 17 17 0 0 0-.661.629A61 61 0 0 0 10.04 6.77l-.102.111.147-.033a61 61 0 0 0 2.342-.572c.345-.093.642-.18.875-.258a5 5 0 0 0 .367-.138zM11.5 1.938a1 1 0 0 0-1.366.366l-.014.027q-.014.03-.036.084a5 5 0 0 0-.102.283c-.078.233-.165.53-.258.875a61 61 0 0 0-.572 2.342l-.033.147.11-.102a61 61 0 0 0 1.743-1.667c.252-.253.465-.477.629-.66a5 5 0 0 0 .248-.304l.017-.025a1 1 0 0 0-.366-1.366M14 9a1 1 0 0 0 0-2l-.03.002a5 5 0 0 0-.386.064c-.242.049-.543.122-.888.213-.688.182-1.513.428-2.314.676L10.238 8l.144.045c.8.248 1.626.494 2.314.676.345.091.646.164.887.213a5 5 0 0 0 .386.064zM1.938 4.5a1 1 0 0 0 .393 1.38l.084.035q.108.045.283.103c.233.078.53.165.874.258a61 61 0 0 0 2.343.572l.147.033-.103-.111a61 61 0 0 0-1.666-1.742 17 17 0 0 0-.66-.629 5 5 0 0 0-.304-.248l-.025-.017a1 1 0 0 0-1.366.366m2.196-1.196.017.025a5 5 0 0 0 .248.303c.164.184.377.408.629.661A61 61 0 0 0 6.77 5.96l.111.102-.033-.147a61 61 0 0 0-.572-2.342c-.093-.345-.18-.642-.258-.875a5 5 0 0 0-.138-.367l-.014-.027a1 1 0 1 0-1.732 1m9.928 8.196a1 1 0 0 0-.366-1.366l-.027-.014a5 5 0 0 0-.367-.138c-.233-.078-.53-.165-.875-.258a61 61 0 0 0-2.342-.572l-.147-.033.102.111a61 61 0 0 0 1.667 1.742c.253.252.477.465.66.629a5 5 0 0 0 .304.248l.025.017a1 1 0 0 0 1.366-.366m-3.928 2.196a1 1 0 0 0 1.732-1l-.017-.025a5 5 0 0 0-.248-.303 17 17 0 0 0-.629-.661A61 61 0 0 0 9.23 10.04l-.111-.102.033.147a61 61 0 0 0 .572 2.342c.093.345.18.642.258.875a5 5 0 0 0 .138.367zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+      </svg>
 
-    <header>
-        <nav>
-            <a  href="https://mx.pinterest.com/">
-                <img  id="pinterest-icon" src="assets/Pinterest_Icon.webp" alt="">
-            </a>
+      <span class="fs-4"> &nbsp; Pérez Méndez Nancy Esmeralda </span>
+    </a>
 
-            <!-- div.left-items -->
-            <div class="left-items">
-                <ul class="first-list">
+    <ul class="nav nav-pills">
+      <li class="nav-item boton-perfil">
 
-                    <!-- li*3>a -->
-                    <li><a id="inicio" href="">Inicio</a></li>
-                    <li><a id="explorar" href="">Explorar</a></li>
-                    <li><a id="crear" href="">Crear</a></li>
+      </li>
+      <li class="nav-item"><a id="boton-perfil" href="#" class="nav-link active sobre mi" aria-current="page">Sobre
+          mí</a></li>
+      <li class="nav-item"><a href="#hanging-icons habilidades" class="nav-link">Habilidades</a></li>
+      <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+      <li class="nav-item"><a href="#testimonios" class="nav-link">Colaboraciones</a></li>
+      <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+    </ul>
+  </header>
 
-                    <a href=""></a>
-                </ul>
+  <main>
+
+
+    <!-- hero -->
+    <div class="hero">
+      <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4" src="assets/yo.jfif" alt="" width="200" height="">
+        <h1 class="display-5 fw-bold text-body-emphasis"> Nancy Esmeralda Pérez Méndez </h1>
+
+        <!-- h2app -->
+        <h2 id="app"></h2>
+
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Profesional en formación en Ingeniería en Inteligencia Artificial. Aunque no tengo mucha
+            experiencia aún, me considero una persona curiosa y atenta a los detalles, siempre buscando aprender de los
+            demás y de cada situación. Mi objetivo es seguir creciendo profesionalmente, absorbiendo conocimientos y
+            aplicándolos en proyectos prácticos. Estoy en busca de oportunidades para seguir aprendiendo y aportar
+            soluciones innovadoras.
+          </p>
+
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button id="boton-cv" type="button" class="btn btn-outline-secondary btn-lg px-4">Link a mi CV</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- HABILIDADES -->
+    <div class="caja-habilidades">
+      <div class="habbilidades container px-4 py-5" id="hanging-icons">
+
+        <h2 class="pb-2 border-bottom">Mis habilidades</h2>
+
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            <div
+              class=" d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="" fill="currentColor" class="bi bi-journal-album" viewBox="0 0 16 16">
+                <path d="M5.5 4a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5zm1 7a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1z"/>
+                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+              </svg>
             </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Aptitudes</h3>
+              <p>Analítica y observadora: Capacidad para identificar detalles importantes y tomar decisiones informadas.
+                Resolutiva: Busco siempre encontrar soluciones, incluso cuando no tengo toda la información.
+                Organizada: Gestiono eficientemente mis tareas y proyectos.
+                Iniciativa: Me gusta liderar y buscar oportunidades para mejorar.</p>
+              
+              </a>
+            </div>
+          </div>
 
-            <div class="search">
+          <div class="col d-flex align-items-start">
+            <div
+              class=" d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="" fill="currentColor" class="bi bi-paint-bucket" viewBox="0 0 16 16">
+                <path d="M6.192 2.78c-.458-.677-.927-1.248-1.35-1.643a3 3 0 0 0-.71-.515c-.217-.104-.56-.205-.882-.02-.367.213-.427.63-.43.896-.003.304.064.664.173 1.044.196.687.556 1.528 1.035 2.402L.752 8.22c-.277.277-.269.656-.218.918.055.283.187.593.36.903.348.627.92 1.361 1.626 2.068.707.707 1.441 1.278 2.068 1.626.31.173.62.305.903.36.262.05.64.059.918-.218l5.615-5.615c.118.257.092.512.05.939-.03.292-.068.665-.073 1.176v.123h.003a1 1 0 0 0 1.993 0H14v-.057a1 1 0 0 0-.004-.117c-.055-1.25-.7-2.738-1.86-3.494a4 4 0 0 0-.211-.434c-.349-.626-.92-1.36-1.627-2.067S8.857 3.052 8.23 2.704c-.31-.172-.62-.304-.903-.36-.262-.05-.64-.058-.918.219zM4.16 1.867c.381.356.844.922 1.311 1.632l-.704.705c-.382-.727-.66-1.402-.813-1.938a3.3 3.3 0 0 1-.131-.673q.137.09.337.274m.394 3.965c.54.852 1.107 1.567 1.607 2.033a.5.5 0 1 0 .682-.732c-.453-.422-1.017-1.136-1.564-2.027l1.088-1.088q.081.181.183.365c.349.627.92 1.361 1.627 2.068.706.707 1.44 1.278 2.068 1.626q.183.103.365.183l-4.861 4.862-.068-.01c-.137-.027-.342-.104-.608-.252-.524-.292-1.186-.8-1.846-1.46s-1.168-1.32-1.46-1.846c-.147-.265-.225-.47-.251-.607l-.01-.068zm2.87-1.935a2.4 2.4 0 0 1-.241-.561c.135.033.324.11.562.241.524.292 1.186.8 1.846 1.46.45.45.83.901 1.118 1.31a3.5 3.5 0 0 0-1.066.091 11 11 0 0 1-.76-.694c-.66-.66-1.167-1.322-1.458-1.847z"/>
+              </svg>
+            </div>
+            <div>
 
-                <div class="barra">
+              <h3 class="fs-2 text-body-emphasis">Frontend</h3>
+              <p style="text-align: justify;">Desde mi primer contacto con HTML, me fascinó la creación de páginas web y sus posibilidades. Para seguir aprendiendo, comencé el curso de Tecnolochicas y he desarrollado proyectos personales utilizando HTML y CSS. Actualmente, estoy expandiendo mis conocimientos en JavaScript para crear sitios web más dinámicos y funcionales. Te invito a darte una vuelta a GitHub donde verás algunos de mis proyectos.
 
-                    <!-- span#lupa -->
-                    <span id="lupa" class="material-symbols-outlined">
-                        search
-                    </span>
+              </p>
+              <a href="#" class="btn btn-secondary">
+                Certificado
+              </a>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div
+              class=" d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              
+              <!-- icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="" fill="currentColor" class="bi bi-backpack4-fill" viewBox="0 0 16 16">
+                <path d="M8 0a2 2 0 0 0-2 2H3.5a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h4v.5a.5.5 0 0 0 1 0V7h4a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H10a2 2 0 0 0-2-2m1 2a1 1 0 0 0-2 0zm-4 9v2h6v-2h-1v.5a.5.5 0 0 1-1 0V11z"/>
+                <path d="M14 7.599A3 3 0 0 1 12.5 8H9.415a1.5 1.5 0 0 1-2.83 0H3.5A3 3 0 0 1 2 7.599V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5z"/>
+              </svg>
 
-                    <input type="text" placeholder="Buscar">
-                    </span>
+            </div>
+            <div>
 
+
+              <h3 class="fs-2 text-body-emphasis">Estudiante</h3>
+              <p style="text-align: justify;">
+                Actualmente, me encuentro en el cuarto semestre de Ingeniería en Inteligencia Artificial en la Escuela Superior de Computo, donde he adquirido conocimientos tales como:
+              </p>
+
+              <ul style="text-align: justify;">
+                <li>Lenguajes de programación: C, Java, JavaScript</li>
+                <li>Bases de datos: SQL</li>
+                <li>Desarrollo web: Conocimientos básicos en desarrollo front-end y back-end.</li>
+              </ul>
+
+              <a href="https://www.escom.ipn.mx/htmls/oferta/mapaCurrIIA2020.php" class="btn btn-secondary">
+                Mapa Curricular
+              </a>
+
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- proyectos -->
+    <div id="proyectos" class="proyectos container mt-5">
+
+      <h2 class="pb-2 border-bottom">Proyectos</h2>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <!-- Imagen -->
+            <img class="bd-placeholder-img card-img-top" src="assets/Pinterest.PNG">
+            <div class="card-body">
+              <p class="card-text">Mi primer pagina web.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyectos">Ver</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyectos">Edit</button>
                 </div>
 
+              </div>
             </div>
-
-            <!-- Iconos derecha -->
-            <div class="right-items">
-
-                <span class="material-symbols-outlined">
-                    notifications
-                </span>
-
-                <span class="material-symbols-outlined">
-                    sms
-                </span>
-
-                <span class="material-symbols-outlined">
-                    account_circle
-                </span>
-
-                <span class="material-symbols-outlined">
-                    keyboard_arrow_down
-                </span>
-
-
-
-            </div>
-        </nav>
-    </header>
-
-
-    <!-- Main la parte principal -->
-    <main class="contenido">
-
-        <!-- div.imagenes  -->
-        <div class="imagenes">
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/1.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/2.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/3.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/4.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/5.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/6.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/7.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/8.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/9.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/10.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/11.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/12.gif" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/13.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/14.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/15.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/16.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/17.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/18.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/19.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/20.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/21.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/22.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/23.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/24.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/25.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/26.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/27.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/28.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/29.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-            <!-- Card  -->
-            <div class="card-image">
-
-                <!-- img.img -->
-                <img src="assets/30.jpg" alt="" class="img">
-
-                <!-- crear botón button.button -->
-                <button class="button">
-                    <a href="##">Guardar</a>
-                </button>
-
-                <span class="material-symbols-outlined oculto1">
-                    upload
-                </span>
-
-                <span class="material-symbols-outlined oculto2">
-                    more_horiz
-                </span>
-
-            </div>
-            <!-- Fin card -->
-
-
-
-
+          </div>
         </div>
 
-    </main>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="assets/Pinterest.PNG">
+
+            <div class="card-body">
+              <p class="card-text">Clon de Pinterest.</p>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyectos"> <a target="_blank"
+                      href="https://frontend-bootcamp-tecnolochicas.vercel.app/">View</a> </button>
+
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyectos"><a target="_blank"
+                      href="https://github.com/BlossomingAngst/Frontend-bootcamp-tecnolochicas">Github </a> </button>
+                </div>
+                <small class="text-body-secondary"> HTML, CSS Y JS </small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="assets/Pinterest.PNG">
+
+            <div class="card-body">
+              <p class="card-text">texto</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyectos">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary btn-proyectos">Edit</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- A lo largo de mi formación, he trabajado en proyectos que me han permitido aplicar estos conocimientos y seguir expandiendo mis habilidades en el desarrollo de soluciones tecnológicas. -->
+
+    <!-- carrusel -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Testimonios</title>
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+      <!-- Enlace para ir a la sección de testimonios ???????-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonios"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Sección de testimonios -->
+      <div id="testimonios" class="testimonios container mt-5">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <h2 class="pb-2 border-bottom">Colaboraciones</h2>
+          <div class="carousel-inner">
+            <!-- Primer Testimonio -->
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                  <img src="image1.jpg" class="card-img-top rounded-circle" alt="Persona 1">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Persona 1</h5>
+                    <p class="card-text">"Este servicio es increíble. Altamente recomendado."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Segundo Testimonio -->
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                  <img src="image2.jpg" class="card-img-top rounded-circle" alt="Persona 2">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Persona 2</h5>
+                    <p class="card-text">"Una experiencia fantástica, sin duda volveré."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tercer Testimonio -->
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                  <img src="image3.jpg" class="card-img-top rounded-circle" alt="Persona 3">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Persona 3</h5>
+                    <p class="card-text">"El equipo es muy profesional y amigable."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Controles del Carrusel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+    </html>
 
 
 
-    <!-- Aqui iria footer -->
+    <!-- contacto -->
+
+    <div id="contacto" class="px-4 py-5 my-5 text-center">
+
+      <!-- icono -->
+      <i class="d-block mx-auto mb-4 fs-1 bi bi-chat-square-dots"></i>
+
+      <h1 class="display-5 fw-bold text-body-emphasis">¿Tienes algo en mente?</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4"> ¡Demos vida a tus ideas! Estoy solo a un clic de distancia. </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+
+          <a href="mailto:pereznancyesmeralda@gmail.com">
+            <button id="btn-contacto" type="button" class="btn btn-primary btn-lg px-4 gap-3"> Conecta conmigo </button>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+
+        <li class="nav-item"><a href="https://github.com/BlossomingAngst" class="nav-link px-2 fs-2 ">
+            <i class="bi bi-github"></i> </a></li>
+
+        <li class="nav-item"><a href="https://www.linkedin.com/in/nancy-esmeralda-p%C3%A9rez-m%C3%A9ndez-392916290/"
+            class="nav-link px-2 fs-2 "><i class="bi bi-linkedin"></i></a></li>
+
+        <li class="nav-item"><a href="https://open.spotify.com/user/qnodzp29zcygtzyc8txul92s3"
+            class="nav-link px-2 fs-2 "><i class="bi bi-spotify"></i></a></li>
+
+
+      </ul>
+      <p class="text-center">Creado por Pérez Méndez Nancy Esmeralda en el bootcamp de <a
+          href="https://tecnolochicas.mx/">TecnolochicasPro</a></p>
+    </footer>
+
+
+  </main>
+
+
+
+  <!-- Funcionalidades para los elementos que estamos creando -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- cdn typewriter -->
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+  <!-- Main JS -->
+  <script src="main.js"></script>
 
 </body>
 
