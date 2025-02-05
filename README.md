@@ -11,18 +11,15 @@ The homepage reflects a bit of my **tastes and personality**, displaying images 
 - 🖼️ **Dynamic image grid** to showcase various inspirations.  
 - ⚡ Built with **HTML, CSS, and JavaScript**.  
 
-## 🛠️ Technologies Used  
+## 💻 Technologies Used  
 - **HTML** for structure.  
 - **CSS** (Flexbox & Grid) for styling and layout.  
 - **JavaScript** for interactive elements.  
 
 ## 📸 Screenshot  
 
- <p align="center">
+ ![Pinterest Clone Preview](./Pinterest.PNG)  
 
- ![Pinterest Clone Preview](./Pinterest.png)  
-
- </p>
 
  
 ## 📥 Installation & Usage  
