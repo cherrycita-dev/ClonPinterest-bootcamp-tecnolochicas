@@ -17,8 +17,14 @@ The homepage reflects a bit of my **tastes and personality**, displaying images 
 - **JavaScript** for interactive elements.  
 
 ## 📸 Screenshot  
- <img src="" alt="banner" width="350">
 
+ <p align="center">
+
+ ![Pinterest Clone Preview](./Pinterest.png)  
+
+ </p>
+
+ 
 ## 📥 Installation & Usage  
 1. Clone this repository:  
    ```sh
